@@ -17,7 +17,7 @@ async function api(path) {
 
 const iso = d => d.toISOString().slice(0,10);
 const dates = [];
-for (let i=0;i<4;i++) {
+for (let i=0;i<3;i++) {
   const d = new Date();
   d.setUTCDate(d.getUTCDate()+i);
   dates.push(iso(d));
