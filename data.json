@@ -1,6 +1,202 @@
 {
-  "updatedAt": "2026-10-08T10:50:09.620Z",
+  "updatedAt": "2026-10-08T11:30:16.565Z",
   "fixtures": [
+    {
+      "id": 1492393,
+      "date": "2026-10-08T00:30:00+00:00",
+      "status": "FT",
+      "league": {
+        "id": 71,
+        "name": "Serie A",
+        "country": "Brazil"
+      },
+      "home": {
+        "id": 135,
+        "name": "Cruzeiro"
+      },
+      "away": {
+        "id": 126,
+        "name": "Sao Paulo"
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "prediction": {
+        "winner": "Sao Paulo",
+        "advice": "Double chance : draw or Sao Paulo",
+        "percent": {
+          "home": "10%",
+          "draw": "45%",
+          "away": "45%"
+        },
+        "goals": {
+          "home": "-2.5",
+          "away": "-1.5"
+        },
+        "score": null
+      }
+    },
+    {
+      "id": 1492398,
+      "date": "2026-10-08T22:30:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 71,
+        "name": "Serie A",
+        "country": "Brazil"
+      },
+      "home": {
+        "id": 128,
+        "name": "Santos"
+      },
+      "away": {
+        "id": 127,
+        "name": "Flamengo"
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "prediction": {
+        "winner": "Flamengo",
+        "advice": "Double chance : draw or Flamengo",
+        "percent": {
+          "home": "10%",
+          "draw": "45%",
+          "away": "45%"
+        },
+        "goals": {
+          "home": "-2.5",
+          "away": "-3.5"
+        },
+        "score": null
+      }
+    },
+    {
+      "id": 1492390,
+      "date": "2026-10-08T23:00:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 71,
+        "name": "Serie A",
+        "country": "Brazil"
+      },
+      "home": {
+        "id": 134,
+        "name": "Atletico Paranaense"
+      },
+      "away": {
+        "id": 1062,
+        "name": "Atletico-MG"
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "prediction": {
+        "winner": "Atletico-MG",
+        "advice": "Double chance : draw or Atletico-MG",
+        "percent": {
+          "home": "10%",
+          "draw": "45%",
+          "away": "45%"
+        },
+        "goals": {
+          "home": "-2.5",
+          "away": "-2.5"
+        },
+        "score": null
+      }
+    },
+    {
+      "id": 1492394,
+      "date": "2026-10-09T00:30:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 71,
+        "name": "Serie A",
+        "country": "Brazil"
+      },
+      "home": {
+        "id": 124,
+        "name": "Fluminense"
+      },
+      "away": {
+        "id": 147,
+        "name": "Coritiba"
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": 1492396,
+      "date": "2026-10-09T00:30:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 71,
+        "name": "Serie A",
+        "country": "Brazil"
+      },
+      "home": {
+        "id": 121,
+        "name": "Palmeiras"
+      },
+      "away": {
+        "id": 118,
+        "name": "Bahia"
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": 1575516,
+      "date": "2026-10-09T17:45:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal"
+      },
+      "home": {
+        "id": 215,
+        "name": "Moreirense"
+      },
+      "away": {
+        "id": 762,
+        "name": "GIL Vicente"
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": 1552180,
+      "date": "2026-10-09T18:00:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 88,
+        "name": "Eredivisie",
+        "country": "Netherlands"
+      },
+      "home": {
+        "id": 197,
+        "name": "PSV Eindhoven"
+      },
+      "away": {
+        "id": 210,
+        "name": "Heerenveen"
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      }
+    },
     {
       "id": 1575176,
       "date": "2026-10-09T18:30:00+00:00",
@@ -21,20 +217,6 @@
       "goals": {
         "home": null,
         "away": null
-      },
-      "prediction": {
-        "winner": "Borussia Dortmund",
-        "advice": "Double chance : Borussia Dortmund or draw",
-        "percent": {
-          "home": "45%",
-          "draw": "45%",
-          "away": "10%"
-        },
-        "goals": {
-          "home": "-3.5",
-          "away": "-2.5"
-        },
-        "score": null
       }
     },
     {
@@ -57,20 +239,6 @@
       "goals": {
         "home": null,
         "away": null
-      },
-      "prediction": {
-        "winner": "Lyon",
-        "advice": "Double chance : draw or Lyon",
-        "percent": {
-          "home": "10%",
-          "draw": "45%",
-          "away": "45%"
-        },
-        "goals": {
-          "home": "-2.5",
-          "away": "-2.5"
-        },
-        "score": null
       }
     },
     {
@@ -93,20 +261,28 @@
       "goals": {
         "home": null,
         "away": null
+      }
+    },
+    {
+      "id": 1575512,
+      "date": "2026-10-09T19:15:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal"
       },
-      "prediction": {
-        "winner": "Espanyol",
-        "advice": "Double chance : draw or Espanyol",
-        "percent": {
-          "home": "10%",
-          "draw": "45%",
-          "away": "45%"
-        },
-        "goals": {
-          "home": "-1.5",
-          "away": "-2.5"
-        },
-        "score": null
+      "home": {
+        "id": 217,
+        "name": "SC Braga"
+      },
+      "away": {
+        "id": 228,
+        "name": "Sporting CP"
+      },
+      "goals": {
+        "home": null,
+        "away": null
       }
     }
   ],
