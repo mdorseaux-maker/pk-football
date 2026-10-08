@@ -1,0 +1,114 @@
+{
+  "updatedAt": "2026-10-08T10:50:09.620Z",
+  "fixtures": [
+    {
+      "id": 1575176,
+      "date": "2026-10-09T18:30:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany"
+      },
+      "home": {
+        "id": 165,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 162,
+        "name": "Werder Bremen"
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "prediction": {
+        "winner": "Borussia Dortmund",
+        "advice": "Double chance : Borussia Dortmund or draw",
+        "percent": {
+          "home": "45%",
+          "draw": "45%",
+          "away": "10%"
+        },
+        "goals": {
+          "home": "-3.5",
+          "away": "-2.5"
+        },
+        "score": null
+      }
+    },
+    {
+      "id": 1552775,
+      "date": "2026-10-09T18:45:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France"
+      },
+      "home": {
+        "id": 116,
+        "name": "Lens"
+      },
+      "away": {
+        "id": 80,
+        "name": "Lyon"
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "prediction": {
+        "winner": "Lyon",
+        "advice": "Double chance : draw or Lyon",
+        "percent": {
+          "home": "10%",
+          "draw": "45%",
+          "away": "45%"
+        },
+        "goals": {
+          "home": "-2.5",
+          "away": "-2.5"
+        },
+        "score": null
+      }
+    },
+    {
+      "id": 1570408,
+      "date": "2026-10-09T19:00:00+00:00",
+      "status": "NS",
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain"
+      },
+      "home": {
+        "id": 535,
+        "name": "Malaga"
+      },
+      "away": {
+        "id": 540,
+        "name": "Espanyol"
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "prediction": {
+        "winner": "Espanyol",
+        "advice": "Double chance : draw or Espanyol",
+        "percent": {
+          "home": "10%",
+          "draw": "45%",
+          "away": "45%"
+        },
+        "goals": {
+          "home": "-1.5",
+          "away": "-2.5"
+        },
+        "score": null
+      }
+    }
+  ],
+  "live": []
+}
