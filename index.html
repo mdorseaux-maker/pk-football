@@ -39,8 +39,14 @@ function render(){
  $('content').innerHTML=fs.length?`<div class="section">${selected==='all'?'Matches':'Matches'}</div><div class="grid">${fs.map(fixtureCard).join('')}</div>`:`<div class="empty">No matches found.</div>`;
 }
 function renderLeagues(){
- $('leagues').innerHTML='<button class="active" data-id="all">All</button>'+data.leagues.map(l=>`<button data-id="${l.id}">${esc(l.name)}</button>`).join('');
- document.querySelectorAll('#leagues button').forEach(b=>b.onclick=()=>{selected=b.dataset.id;document.querySelectorAll('#leagues button').forEach(x=>x.classList.remove('active'));b.classList.add('active');render()});
+ const leagues=[...new Map((data.fixtures||[]).map(f=>[f.league.id,f.league])).values()];
+ $('leagues').innerHTML='<button class="active" data-id="all">All</button>'+leagues.map(l=>`<button data-id="${l.id}">${esc(l.name)}</button>`).join('');
+ document.querySelectorAll('#leagues button').forEach(b=>b.onclick=()=>{
+   selected=b.dataset.id;
+   document.querySelectorAll('#leagues button').forEach(x=>x.classList.remove('active'));
+   b.classList.add('active');
+   render();
+ });
 }
 fetch('./data.json?'+Date.now()).then(r=>r.json()).then(x=>{data=x;$('updated').textContent='Real data • Updated '+new Date(x.updatedAt).toLocaleString();renderLeagues();render()}).catch(e=>{$('content').innerHTML='<div class="empty">Data not available yet. Run the GitHub Action once.</div>'});
 </script></body></html>
