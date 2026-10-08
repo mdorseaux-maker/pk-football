@@ -18,7 +18,7 @@ jobs:
       - name: Fetch football data
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: node scripts/update-football.mjs
+        run: node script/update-football.mjs
 
       - name: Save data
         run: |
