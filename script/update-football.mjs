@@ -47,7 +47,7 @@ const out = fixtures.map(x => ({
   goals:{home:x.goals?.home,away:x.goals?.away}
 }));
 
-for (const m of out.slice(0,10)) {
+for (const m of out) {
   try {
     const p = (await api("/predictions?fixture=" + m.id))[0];
     if (p) m.prediction = {
