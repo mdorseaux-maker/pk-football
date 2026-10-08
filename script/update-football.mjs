@@ -14,7 +14,30 @@ const LEAGUES = new Set([
   94,   // Primeira Liga
   88,   // Eredivisie
   253,  // Major League Soccer
-  71    // Brasileirão
+  71    // Brasileirão 
+  const BIG_TEAMS = new Set([
+  "Barcelona",
+  "Real Madrid",
+  "Atletico Madrid",
+  "Manchester City",
+  "Manchester United",
+  "Liverpool",
+  "Arsenal",
+  "Chelsea",
+  "Paris Saint Germain",
+  "Marseille",
+  "Bayern Munich",
+  "Borussia Dortmund",
+  "Inter",
+  "AC Milan",
+  "Juventus",
+  "Napoli",
+  "Benfica",
+  "Porto",
+  "Sporting CP",
+  "Ajax",
+  "PSV Eindhoven"
+]);
 ]);
 const headers = {"x-apisports-key": key, "Accept": "application/json"};
 
@@ -47,7 +70,19 @@ const out = fixtures.map(x => ({
   goals:{home:x.goals?.home,away:x.goals?.away}
 }));
 
-for (const m of out.slice(0,3)) {
+const priorityFixtures = [...out].sort((a, b) => {
+  const aHome = BIG_TEAMS.has(a.home?.name);
+  const aAway = BIG_TEAMS.has(a.away?.name);
+  const bHome = BIG_TEAMS.has(b.home?.name);
+  const bAway = BIG_TEAMS.has(b.away?.name);
+
+  const scoreA = (aHome ? 2 : 0) + (aAway ? 2 : 0);
+  const scoreB = (bHome ? 2 : 0) + (bAway ? 2 : 0);
+
+  return scoreB - scoreA;
+});
+
+for (const m of priorityFixtures.slice(0,3)) {
   try {
     const p = (await api("/predictions?fixture=" + m.id))[0];
     if (p) m.prediction = {
