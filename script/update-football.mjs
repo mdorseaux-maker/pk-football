@@ -4,7 +4,18 @@ const key = process.env.API_FOOTBALL_KEY;
 if (!key) throw new Error("API_FOOTBALL_KEY is missing");
 
 const BASE = "https://v3.football.api-sports.io";
-const LEAGUES = new Set([2,39,61,78,135,140]);
+const LEAGUES = new Set([
+  2,    // Champions League
+  39,   // Premier League
+  61,   // Ligue 1
+  78,   // Bundesliga
+  135,  // Serie A
+  140,  // La Liga
+  94,   // Primeira Liga
+  88,   // Eredivisie
+  253,  // Major League Soccer
+  71    // Brasileirão
+]);
 const headers = {"x-apisports-key": key, "Accept": "application/json"};
 
 async function api(path) {
